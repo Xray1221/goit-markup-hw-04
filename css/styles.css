@@ -4,7 +4,7 @@
     --general-text-color: #212121;
     --grey-color: #757575;
   }
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, ul {
     margin: 0;
 }
 body { 
@@ -101,7 +101,6 @@ body {
 .footer-contact-link:hover,
 .footer-contact-link:focus {
     color: var(--active-color);
-    /* fill: var(--active-color); */
 }
 /* Main */
 .service-section {
@@ -111,6 +110,7 @@ body {
     background-position: center;
     background-size: cover;
     max-width: 1600px;
+    margin: 0 auto;
 }
 .service-wrapper {
     text-align: center;
@@ -157,6 +157,7 @@ body {
 .button-list-item:not(:first-child) {
     margin-left: 8px;
 }
+.btn-filter-active,
 .btn-filter:hover,
 .btn-filter:focus {
     color: var(--white-color);
@@ -182,15 +183,13 @@ body {
 .project-list {
     flex-wrap: wrap;
     margin: -15px;
-    /* justify-content: space-between; */
 }
 .project-item {
     margin: 15px;
     background-color: var(--white-color);
     cursor: pointer;
 }
-.project-item:hover,
-.project-item:focus {
+.project-item:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-wrapper {
@@ -229,6 +228,7 @@ body {
     background-color: #F5F4FA;
     width: 270px;
     height: 120px;
+    border-radius: 4px;
 }
 .quaility-list-item:not(:first-child) {
     margin-left: 30px;
@@ -308,7 +308,8 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
-    color: var(--grey-color);
+    color: #AFB1B8;
+    border-radius: 50%;
 }
 .team-social-icon {
     fill: currentColor;
@@ -317,7 +318,7 @@ body {
 .team-social-link:focus {
     color: var(--white-color);
     background-color: var(--active-color);
-    border-radius: 50%;
+   
 }
 .clients-title {
     font-weight: 700;
@@ -331,7 +332,7 @@ body {
     list-style: none;
     display: flex;
     padding-left: 0;
-    margin: 50px 0 0 0;
+    margin-top: 50px;
 }
 .clients-list-item {
     width: 170px;
@@ -362,7 +363,6 @@ body {
 .footer {
     background-color: #2F303A;
     padding: 60px 0;
-    height: 252px;
 }
 .footer-join-title {
     font-weight: 700;
@@ -370,16 +370,11 @@ body {
     line-height: 1.15;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    text-align: center;
     color: var(--white-color);
-    padding-top: 12px;
 }
 .footer-wrapper {
     display: flex;
-}
-.footer-block-wrapper {
-    width: 206px;
-    height: 80px;
+    align-items: baseline;
 }
 .footer-block-wrapper:not(:first-child) {
     margin-left: 70px;
@@ -389,7 +384,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0 100px 0;
+    margin-top: 20px;
     padding: 0;
 }
 .footer-social-item {
